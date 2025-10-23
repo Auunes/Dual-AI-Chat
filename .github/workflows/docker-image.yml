@@ -33,7 +33,7 @@ jobs:
           context: .
           push: true
           tags: |
-            # 这里将 "Auunes" 手动改为小写 "auunes"
+            # 只保留纯标签，删除注释行
             ghcr.io/auunes/dual-ai-chat:latest
             ghcr.io/auunes/dual-ai-chat:${{ github.sha }}
           cache-from: type=gha
