@@ -33,7 +33,7 @@ jobs:
           context: .
           push: true
           tags: |
-            # 将仓库所有者名称强制转为小写（使用 toLower 函数）
+            # 将仓库所有者名称强制转为小写
             ghcr.io/${{ toLower(github.repository_owner) }}/dual-ai-chat:latest
             ghcr.io/${{ toLower(github.repository_owner) }}/dual-ai-chat:${{ github.sha }}
           cache-from: type=gha
